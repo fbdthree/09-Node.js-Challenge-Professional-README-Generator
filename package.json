@@ -1,0 +1,26 @@
+{
+  "name": "09-node.js-challenge-professional-readme-generator",
+  "version": "1.0.0",
+  "description": "Backend app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbdthree/09-Node.js-Challenge-Professional-README-Generator.git"
+  },
+  "keywords": [
+    "inquirer"
+  ],
+  "author": "Forrest Dawson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fbdthree/09-Node.js-Challenge-Professional-README-Generator/issues"
+  },
+  "homepage": "https://github.com/fbdthree/09-Node.js-Challenge-Professional-README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
