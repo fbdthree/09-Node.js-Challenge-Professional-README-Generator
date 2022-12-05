@@ -1,6 +1,10 @@
+// Imports `inquirer` package.
 const inquirer = require('inquirer')
+// Imports `fs` package.
 const fs = require('fs')
 
+// Use inquirer to build command line interface.
+// Build an object, with `inquirer`, that will hold the questions and commands that will appear in a prompt interface in the terminal.
 inquirer.prompt([
     {
         type: "input",
@@ -30,17 +34,17 @@ inquirer.prompt([
     },
     {
         type: "input",
-        name: "intallationRequirements", 
+        name: "intallationRequirements",
         message: "Please enter project installation requirements:"
     },
     {
         type: "input",
-        name: "testingRequirements", 
+        name: "testingRequirements",
         message: "Please enter project testing requirements:"
     },
     {
         type: "input",
-        name: "github", 
+        name: "github",
         message: "Please enter project Git Hub:"
     },
     {
@@ -48,6 +52,7 @@ inquirer.prompt([
         name: "email",
         message: "Please enter project email"
     }
+// Plug the inputs taken from the inquirer prompt object into the README template below, using Mardown to build the README.
 ]).then(response => {
     let readMe =
         `
@@ -90,12 +95,16 @@ ${response.github}
 
 ### Email
 ${response.email}
-
 `
+// Console log the completed README to see the README written in Markdown, on the terminal.
     console.log(readMe)
-    fs.writeFileSync("README.md", readMe, function (err,data) {
+    
+    // Write the completed README to a file named `README.md`.
+    // Handle any errors.
+    fs.writeFileSync("README.md", readMe, function (err, data) {
         console.log(err)
         if (err) throw (err)
     })
     console.log("Markdown complete")
 })
+
