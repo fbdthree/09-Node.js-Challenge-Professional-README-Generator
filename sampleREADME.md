@@ -1,4 +1,3 @@
-
 # **Sample title**
 
 ## **Description**

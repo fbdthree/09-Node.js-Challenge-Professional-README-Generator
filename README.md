@@ -44,3 +44,7 @@ fbd3@me.com
 ### **Demonstration**
 
 [Professional README Generator](https://screencast-o-matic.com/watch/c3l1ejVvhUj)
+
+### **Sample README**
+
+[Sample README file](./sampleREADME.md)
