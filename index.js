@@ -76,19 +76,14 @@ ${response.description}
 
 * [Email](#email)  
 
+### **Installation**
+${response.intallationRequirements}
 
 ### **Usage**
 ${response.usage}
 
 ### **License**
 ![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)
-
-
-### **Contributors**
-${response.contributors}
-
-### **Installation**
-${response.intallationRequirements}
 
 ### **Contributors**
 ${response.contributors}
@@ -109,7 +104,7 @@ ${response.email}
     // Write the completed README to a file named `README.md`.
     // Handle any errors.
     // Notify when complete.
-    fs.writeFileSync("README.md", readMe, function (err, data) {
+    fs.writeFileSync("exampleREADME.md", readMe, function (err, data) {
         console.log(err)
         if (err) throw (err)
     })
